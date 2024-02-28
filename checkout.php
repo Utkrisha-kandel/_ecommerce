@@ -154,6 +154,46 @@ if (isset($_POST['order'])) {
                   onkeypress="if(this.value.length == 6) return false;" class="box" required>
             </div>
          </div>
+<<<<<<< HEAD
+=======
+         <div class="inputBox">
+            <span>your email :</span>
+            <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>payment method :</span>
+            <select name="method" class="box" required>
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="Khalti app">Khalti App</option>
+
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>city :</span>
+            <input type="text" name="city" placeholder="e.g. Kathmandu" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>state :</span>
+            <input type="text" name="state" placeholder="e.g. Bagmati" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>country :</span>
+            <input type="text" name="country" placeholder="e.g. Nepal" class="box" maxlength="50" required>
+         </div>
+         <div class="inputBox">
+            <span>Postal code :</span>
+            <input type="number" min="0" name="postal_code" placeholder="e.g. 123456" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
+         </div>
+      </div>
+>>>>>>> ba94012b409818c3925f94d6e044e974497d92f1
 
          <input type="submit" name="order" class="btn <?= ($grand_total > 1) ? '' : 'disabled'; ?>" value="place order">
 
